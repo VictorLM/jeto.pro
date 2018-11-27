@@ -1,17 +1,13 @@
 {% extends "website/_layouts/template_base.html" %}
 {% load static %}
 {% block title %}Página Inicial{% endblock %}
+{% block styles %}
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+{% endblock %}
 {% block conteudo %}
     <div class="container">
         <br/>
-        <section class="jumbotron text-center jumbotron-home">
-            <h1 class="jumbotron-heading">Album example</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-            <p>
-                <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
-        </section>
+        <h1 class="h1-home-header"></h1>
         <hr/>
         <h1>jeto.Pro</h1>
         <p>Agora sao: {{now}}</p>
@@ -25,4 +21,8 @@
             {% endfor %}
         </ul>
     </div>
+{% endblock %}
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="{% static 'website/js/home.js' %}"></script>
 {% endblock %}
