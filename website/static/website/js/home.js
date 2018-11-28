@@ -1,5 +1,5 @@
-  var typed2 = new Typed('.h1-home-header', {
-    strings: ['WORK HARD','WORK SMART'],
+var typed2 = new Typed('.h1-home-header', {
+    strings: ['<b>WORK HARDER</b>','<b>WORK SMARTER</b>','<b>WORK SMARTER =)</b>','<b>WORK SMARTER</b>'],
     startDelay: 1000,
     typeSpeed: 100,
     backSpeed: 50,
@@ -10,6 +10,4 @@
             $('.typed-cursor').hide();
         }, 5000);
      },
-  });
-
-  $(".typed-cursor").addClass("display-2");
+});

@@ -19,5 +19,15 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     display: inline;
     text-align: center!important;
-    font-size: 8em!important;
+    font-size: 9vw!important;
+}
+.typed-cursor {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 9vw;
+    line-height: 0;
+}
+
+.menu-top-nav{
+    background-color: rgba(240, 240, 240, 0.8);
+    border-bottom: solid 1px lightgrey;
 }
