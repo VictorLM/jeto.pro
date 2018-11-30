@@ -11,17 +11,55 @@
             <h1 class="h1-home-header"></h1>
         </div>
         <hr/>
-        <h1>jeto.Pro</h1>
-        <p>Agora sao: {{now}}</p>
-        <ul>
-            {%for transacao in transacoes %}
-                {% if transacao == "t2"%}
-                    <li><b>{{transacao}}</b></li>
-                {%else%}
-                    <li>{{transacao}}</li>
-                {%endif%}
-            {% endfor %}
-        </ul>
+        <div class="row text-center">
+            <div class="col-lg-3">
+                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização" width="150" height="150">
+                <h2 class="header-itens-home">Otimizar</h2>
+                <p class="text-justify">
+                    Otimize seus resultados com a ajuda da tecnologia, tornando a rotina do seu negócio mais eficaz, eficiente e gerenciavel, gerando mais resultado com menos recursos.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <img class="rounded-circle" src="{% static 'website/img/robo.gif' %}" alt="Automatização" width="200" height="150">
+                <h2 class="header-itens-home">Automatizar</h2>
+                <p class="text-justify">
+                    Automatize total ou parcialmente seus processos e tarefas, tornando tudo mais rápido, eficiente, sistemico e centralizado.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <img class="rounded-circle" src="{% static 'website/img/personalize.gif' %}" alt="Personalização" width="150" height="150">
+                <h2 class="header-itens-home">Personalizar</h2>
+                <p class="text-justify">
+                    Sites e sistemas sob medida de acordo com a sua necessidade. Integração entre sistemas, gerenciamento, intranet, e tudo o que precisar.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <img class="rounded-circle" src="{% static 'website/img/integracao.gif' %}" alt="Integração" width="150" height="150">
+                <h2 class="header-itens-home">Integrar</h2>
+                <p class="text-justify">
+                    Centralize sua informações integrando os diversos sistemas usados diariamente, explorando ao máximo os recursos oferecidos, sem redundância e com funcionalidades personalizadas.
+                </p>
+            </div>
+        </div>
+        <hr/>
+        <div class="">
+            <h1>Automatize, otimize, modernize e integre seus processos, serviços e sistemas.</h1>
+            <p>
+                Otimize a rotina do seu negócio, tornando-o mais eficaz, eficiente e gerenciavel.
+                Com mais tempo, você pode focar no que realmente importa.
+                Desde seu site com uma intranet, até seu sistema próprio, para gerencimento do seu negócio.
+            </p>
+        </div>
+        <hr/>
+        <div class="">
+            <h1>Automatize, otimize, modernize e integre seus processos, serviços e sistemas.</h1>
+            <p>
+                Otimize a rotina do seu negócio, tornando-o mais eficaz, eficiente e gerenciavel.
+                Com mais tempo, você pode focar no que realmente importa.
+                Desde seu site com uma intranet, até seu sistema próprio, para gerencimento do seu negócio.
+            </p>
+        </div>
+        <hr/>
     </div>
 {% endblock %}
 {% block scripts %}
