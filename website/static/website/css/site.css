@@ -80,13 +80,16 @@ h1, h2, h3, .menu-item-bold {
     color: white;
 }
 .fa-envelope-o{
-    color: maroon;
+    color: #D44638;
+    font-weight: bold!important;
 }
 .fa-whatsapp{
-    color: greenyellow;
+    color: #25d366;
+    font-weight: bold!important;
 }
 .fa-twitter{
-    color: #00aced;
+    color: #0084b4;
+    font-weight: bold!important;
 }
 .portifolio-a img{
     transition: all 0.5s ease;

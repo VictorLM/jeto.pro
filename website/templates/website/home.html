@@ -1,6 +1,6 @@
 {% extends "website/_layouts/template_base.html" %}
 {% load static %}
-{% block title %}Página Inicial{% endblock %}
+{% block title %}jeto.Pro - Consultoria e Desenvolvimento de Aplicações{% endblock %}
 {% block styles %}
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -51,70 +51,213 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
                 <a class="portifolio-a" data-toggle="modal" data-target="#chebabi">
-                    <img class="rounded-circle portifolio-logo" src="{% static 'website/img/chebabi.jpg' %}" alt="logo">
+                    <img class="rounded-circle portifolio-logo" src="{% static 'website/img/portifolio/chebabi.jpg' %}" alt="logo">
                 </a>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="chebabi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="chebabi" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <a target="_blank" href="http://www.chebabi.com/">
+                                <h5 class="modal-title text-center">Chebabi.com</h5>
+                            </a>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p class="text-justify">
+                                Site de apresentação, blog e intranet integrada aos sistemas do escritório e à diversas APIs.
+                            </p>
+                            <div id="chebabiControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_chebabi_1.png' %}" alt="Primeiro slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_chebabi_2.png' %}" alt="Segundo slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_chebabi_3.png' %}" alt="Terceiro slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#chebabiControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#chebabiControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Proximo</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                <a class="portifolio-a" data-toggle="modal" data-target="#chebabi">
-                    <img class="rounded-circle portifolio-logo" src="{% static 'website/img/apperitivo.jpg' %}" alt="logo">
-                </a>
+                <!-- Fim modal -->
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <a class="portifolio-a" data-toggle="modal" data-target="#apperitivo">
+                        <img class="rounded-circle portifolio-logo" src="{% static 'website/img/portifolio/apperitivo.jpg' %}" alt="logo">
+                    </a>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="chebabi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="apperitivo" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                         <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <h5 class="modal-title text-center">APPeritivo</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p class="text-justify">
+                                Plataforma para gerenciamento de imóveis em negociação de forma simples e direta.
+                            </p>
+                            <div id="apperitivoControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_apperitivo_1.jpg' %}" alt="Primeiro slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_apperitivo_2.jpg' %}" alt="Segundo slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_apperitivo_3.jpg' %}" alt="Terceiro slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#apperitivoControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#apperitivoControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Proximo</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         </div>
                         </div>
                     </div>
                 </div>
+                <!-- Fim modal -->
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <a class="portifolio-a" data-toggle="modal" data-target="#tindertools">
+                        <img class="rounded-circle portifolio-logo" src="{% static 'website/img/portifolio/tinder_tools.png' %}" alt="logo">
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="tindertools" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center">Tinder Tools</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-justify">
+                                Plataforma baseada e integrada ao aplicativo Tinder. Com funções exclusivas e facilidades para quem já usa o aplicativo.
+                            </p>
+                            <div id="tindertoolsControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_tindertools_1.jpg' %}" alt="Primeiro slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_tindertools_2.jpg' %}" alt="Segundo slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_tindertools_3.jpg' %}" alt="Terceiro slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#tindertoolsControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#tindertoolsControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Proximo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim modal -->
+
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <a class="portifolio-a" data-toggle="modal" data-target="#festasfun">
+                        <img class="rounded-circle portifolio-logo" src="{% static 'website/img/portifolio/festas_fun.jpg' %}" alt="logo">
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="festasfun" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center">Festas.fun</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-justify">
+                                Indexador de eventos do Facebook que busca e categoria os eventos de acordo com a localidade.
+                            </p>
+                            <div id="festasfunControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_festasfun_1.jpg' %}" alt="Primeiro slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_festasfun_2.jpg' %}" alt="Segundo slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100 img-thumbnail" src="{% static 'website/img/portifolio/slides/slide_festasfun_3.jpg' %}" alt="Terceiro slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#festasfunControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#festasfunControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Proximo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim modal -->
+
             </div>
         </div>
         <hr/>
         <div class="">
             <h1 class="text-center display-1" id="sobre">Sobre/Perfil</h1>
             <p>
-                Otimize a rotina do seu negócio, tornando-o mais eficaz, eficiente e gerenciavel.
-                Com mais tempo, você pode focar no que realmente importa.
-                Desde seu site com uma intranet, até seu sistema próprio, para gerencimento do seu negócio.
+                Adicionar breve descrição e perfil. Adicionar foto estilizada.
             </p>
-            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <h2>Chebabi.com</h2>
-                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização" width="150" height="150">
-            </div>
         </div>
         <hr/>
         <div class="">
