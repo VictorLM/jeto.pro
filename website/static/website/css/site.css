@@ -39,7 +39,10 @@ h1, h2, h3, .menu-item-bold {
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
-
+.rounded-circle{
+    width: 150px;
+    height: 150px;
+}
 .nav-item:hover {
     background-color: #12a2cf;;
 }
@@ -52,4 +55,48 @@ h1, h2, h3, .menu-item-bold {
 }
 .to-top-button{
     color: black;
+}
+.form-contato-home{
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: 1em;
+    padding: 1em;
+}
+.form-contato-home textarea{
+    resize: none;
+}
+.li-contatos{
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: italic;
+}
+.li-contatos a{
+    transition: all 0.5s ease;
+    color: rgba(0, 0, 0, 0.7);
+}
+.li-contatos a:hover{
+    text-decoration: none;
+    color: white;
+}
+.fa-envelope-o{
+    color: maroon;
+}
+.fa-whatsapp{
+    color: greenyellow;
+}
+.fa-twitter{
+    color: #00aced;
+}
+.portifolio-a img{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.portifolio-a img:hover{
+    opacity: 1;
+}
+.portifolio-logo{
+    width: 200px;
+    height: 200px;
 }

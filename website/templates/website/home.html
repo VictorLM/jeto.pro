@@ -3,6 +3,7 @@
 {% block title %}Página Inicial{% endblock %}
 {% block styles %}
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 {% endblock %}
 {% block conteudo %}
@@ -14,28 +15,28 @@
         <hr/>
         <div class="row text-center">
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização" width="150" height="150">
+                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização">
                 <h2>Otimize</h2>
                 <p class="text-justify">
                     Otimize seus resultados com a ajuda da tecnologia, tornando a rotina do seu negócio mais eficaz, eficiente e gerenciavel, gerando mais resultado com menos recursos.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/robo.gif' %}" alt="Automatização" width="200" height="150">
+                <img class="rounded-circle" src="{% static 'website/img/robo.gif' %}" alt="Automatização" height="150">
                 <h2>Automatize</h2>
                 <p class="text-justify">
                     Automatize total ou parcialmente seus processos e tarefas, tornando tudo mais rápido, eficiente, sistemico e centralizado.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/personalize.gif' %}" alt="Personalização" width="150" height="150">
+                <img class="rounded-circle" src="{% static 'website/img/personalize.gif' %}" alt="Personalização">
                 <h2>Personalize</h2>
                 <p class="text-justify">
                     Sites e sistemas sob medida de acordo com a sua necessidade. Integração entre sistemas, gerenciamento, intranet, e tudo o que precisar.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/integracao.gif' %}" alt="Integração" width="150" height="150">
+                <img class="rounded-circle" src="{% static 'website/img/integracao.gif' %}" alt="Integração">
                 <h2>Integre</h2>
                 <p class="text-justify">
                     Centralize sua informações integrando os diversos sistemas usados diariamente, explorando ao máximo os recursos oferecidos, sem redundância e com funcionalidades personalizadas.
@@ -43,16 +44,63 @@
             </div>
         </div>
         <hr/>
-        <div class="">
-            <h1 class="text-center display-1" id="portifolio">Portifolio</h1>
-            <p>
-                Otimize a rotina do seu negócio, tornando-o mais eficaz, eficiente e gerenciavel.
-                Com mais tempo, você pode focar no que realmente importa.
-                Desde seu site com uma intranet, até seu sistema próprio, para gerencimento do seu negócio.
-            </p>
-            <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <h2>Chebabi.com</h2>
-                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização" width="150" height="150">
+        <div class="portifolio">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="display-1" id="portifolio">Portifolio</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <a class="portifolio-a" data-toggle="modal" data-target="#chebabi">
+                    <img class="rounded-circle portifolio-logo" src="{% static 'website/img/chebabi.jpg' %}" alt="logo">
+                </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="chebabi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <a class="portifolio-a" data-toggle="modal" data-target="#chebabi">
+                    <img class="rounded-circle portifolio-logo" src="{% static 'website/img/apperitivo.jpg' %}" alt="logo">
+                </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="chebabi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr/>
@@ -70,8 +118,70 @@
         </div>
         <hr/>
         <div class="">
-            <h1 class="text-center display-1" id="contato">Contato</h1>
-            form e telefone + wpp
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="display-1" id="contato">Contato</h1>
+                </div>
+            </div>
+            <div class="row form-contato-home">
+                <div class="col-xl-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li-contatos">
+                            <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:victor.meireles.dev@gmail.com">victor.meireles.dev@gmail.com</a>
+                        </li>
+                        <li class="list-group-item li-contatos">
+                            <i class="fa fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send?phone=5519992242988&text=Encontrei%20seu%20contato%20pelo%20site%20jeto.Pro">(19) 9 9224-2988</a>
+                        </li>
+                        <li class="list-group-item li-contatos">
+                            <i class="fa fa-twitter"></i>
+                            <a target="_blank" href="https://twitter.com/IAmDinamite">@IAmDinamite</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-7">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 text-center">
+                            
+                        </div>
+                        <div class="col-md-12 col-lg-6 text-center">
+                            <h3>
+                                
+                            </h3>
+                        </div>
+                    </div>
+
+                    <form method="POST" action="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Nome">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-lg" placeholder="Telefone">
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="form-control form-control-lg" placeholder="Mensagem..."></textarea>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col text-right">
+                                <button type="submit" class="btn btn-lg btn-success">
+                                    <i class="fa fa-paper-plane"></i> Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>  
+
+            </div>
         </div>
         <hr/>
         <footer class="rodape">
