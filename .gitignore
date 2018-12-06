@@ -129,4 +129,6 @@ dmypy.json
 # PyCharm
 .idea/
 
-# End of https://www.gitignore.io/api/django"<app_name>/settings_secret.py" 
+jeto_pro/settings_secret.py
+
+# End of https://www.gitignore.io/api/django
