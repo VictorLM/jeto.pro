@@ -11,3 +11,8 @@ var typed2 = new Typed('.h1-home-header', {
         }, 5000);
      },
 });
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
