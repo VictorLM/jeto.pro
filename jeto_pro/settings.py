@@ -71,6 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jeto_pro.wsgi.application'
 
+#DB SETTINGS
 from .settings_secret import *
 
 # Password validation
@@ -95,7 +96,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-BR'
 
 TIME_ZONE = 'UTC'
 
