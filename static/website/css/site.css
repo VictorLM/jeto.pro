@@ -15,11 +15,11 @@ body {
     font-family: 'Chakra Petch', sans-serif;
     display: inline;
     text-align: center!important;
-    font-size: 9vw!important;
+    font-size: 9vmax!important;
 }
 .typed-cursor {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 9vw;
+    font-size: 9vmax;
     line-height: 0;
 }
 
@@ -33,6 +33,13 @@ h1, h2, h3, .menu-item-bold {
     font-weight: bold;
 }
 
+.display-1-home{
+    font-size: 9vmax;
+}
+
+.h2-home{
+    font-size: 2.8em;
+}
 .nav-item{
     transition: all 0.5s ease;
     border-radius: 0.5em;
@@ -69,7 +76,7 @@ h1, h2, h3, .menu-item-bold {
 .li-contatos{
     background-color: transparent;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2.5vmax;
     font-family: 'Open Sans Condensed', sans-serif;
     font-style: italic;
 }
