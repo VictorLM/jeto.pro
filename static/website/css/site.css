@@ -44,7 +44,7 @@ h1, h2, h3, .menu-item-bold {
     height: 150px;
 }
 .nav-item:hover {
-    background-color: #12a2cf;;
+    background-color: #12a2cf;
 }
 
 .nav-link:hover {
@@ -122,4 +122,18 @@ hr {
     font-size: 2em;
     font-family: 'Chakra Petch', sans-serif;
     text-align: justify;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity:1;
+    transform: translateY(0px);
+    transition:.2s ease all;
+}
+.dropdown-menu {
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    transform: translateY(1em);
+    transition:.2s ease all;
 }
