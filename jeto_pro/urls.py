@@ -20,5 +20,5 @@ from website.views import home, enviar_contato
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='url_home'),
-    path('enviar/', enviar_contato, name='enviar_contato'),
+    path('enviar/', enviar_contato, name='url_enviar_contato'),
 ]
