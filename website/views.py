@@ -26,7 +26,5 @@ def enviar_contato(request):
                 return render(request, 'website/home.html', data)
             data['sucesso'] = 'Contato enviado com sucesso! Em breve lhe responderemos.'
             return render(request, 'website/home.html', data)
-        else:
-            data['erro'] = 'Erro! Preencha todos os campos corretamente e tente novamente.'
-            return render(request, 'website/home.html', data)
-
+        data['erro'] = 'Erro! Preencha todos os campos corretamente e tente novamente.'
+        return render(request, 'website/home.html', data)
