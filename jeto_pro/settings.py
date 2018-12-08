@@ -71,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'jeto_pro.wsgi.application'
 
-#DB SETTINGS
+#DB AND MAIL SETTINGS
 from .settings_secret import *
 
 # Password validation

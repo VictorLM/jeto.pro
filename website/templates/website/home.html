@@ -299,23 +299,39 @@
                         </div>
                     </div>
 
-                    <form method="POST" action="">
+                    {% if erro %}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            {{erro}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% elif sucesso %}
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{sucesso}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endif %}
+
+                    <form method="POST" name="contato" action="{% url 'enviar_contato' %}">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-4">
-                                <input type="text" class="form-control form-control-lg" placeholder="Nome">
+                                <input type="text" name="nome" class="form-control form-control-lg" placeholder="* Nome" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control form-control-lg" placeholder="E-mail">
+                                <input type="text" name="email" class="form-control form-control-lg" placeholder="* E-mail" required>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" class="form-control form-control-lg" placeholder="Telefone">
+                                <input type="text" name="telefone" class="form-control form-control-lg" placeholder="Telefone">
                             </div>
                         </div>
                         <br/>
                         <div class="row">
                             <div class="col">
-                                <textarea class="form-control form-control-lg" placeholder="Mensagem..."></textarea>
+                                <textarea  name="mensagem" class="form-control form-control-lg" placeholder="* Mensagem..." required></textarea>
                             </div>
                         </div>
                         <br/>
@@ -350,4 +366,11 @@
 {% block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="{% static 'website/js/home.js' %}"></script>
+
+    {% if erro or sucesso %}
+        <script>
+            document.getElementById("contato").scrollIntoView();
+        </script>
+    {% endif %}
+
 {% endblock %}
