@@ -315,7 +315,7 @@
                         </div>
                     {% endif %}
 
-                    <form method="POST" name="contato" action="/enviar">
+                    <form action="{% url 'url_enviar' %}" method="POST">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-4">
