@@ -8,7 +8,6 @@ def home(request):
     data= {}
     return render(request, 'website/home.html', data)
 
-'''
 def enviar_contato(request):
     data= {}
     if request.method == 'GET':
@@ -30,8 +29,4 @@ def enviar_contato(request):
         else:
             data['erro'] = 'Erro! Preencha todos os campos corretamente e tente novamente.'
             return render(request, 'website/home.html', data)
-'''
-def enviar_contato(request):
-    data= {}
-    data['erro'] = 'Erro! Preencha todos os campos corretamente e tente novamente.'
-    return render(request, 'website/home.html', data)
+
