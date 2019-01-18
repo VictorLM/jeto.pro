@@ -158,7 +158,6 @@ hr {
     max-width: 100%;
     border-radius: 5em;
     transition: all 0.5s ease;
-    cursor: pointer;
     opacity: 0.6;
 }
 .img-tools:hover{
