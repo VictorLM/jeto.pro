@@ -22,21 +22,17 @@ body {
     font-size: 9vmax;
     line-height: 0;
 }
-
 .menu-top-nav{
     background-color: rgba(240, 240, 240, 0.8);
     border-bottom: solid 1px lightgrey;
 }
-
 h1, h2, h3, .menu-item-bold {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: bold;
 }
-
 .display-1-home{
     font-size: 9vmax;
 }
-
 .h2-home{
     font-size: 2.8em;
 }
@@ -79,6 +75,7 @@ h1, h2, h3, .menu-item-bold {
     font-size: 2.5vmax;
     font-family: 'Open Sans Condensed', sans-serif;
     font-style: italic;
+    padding-left: 0!important;
 }
 .li-contatos a{
     transition: all 0.5s ease;
@@ -146,4 +143,35 @@ hr {
 }
 .div-home-gifs p {
     font-size: 1.2em;
+}
+.gifs-home{
+    transition: all 0.5s ease;
+    opacity: 0.8;
+}
+.gifs-home:hover{
+    opacity: 1;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.img-tools{
+    max-width: 100%;
+    border-radius: 5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.img-tools:hover{
+    opacity: 1;
+}
+
+.card-tools{
+    margin: 0.5em;
+    background-color: rgba(242, 242, 242, 0.5);
+}
+.display-grid{
+    display: grid;
+}
+.display-1-tools{
+    font-size: 7vmax;
 }

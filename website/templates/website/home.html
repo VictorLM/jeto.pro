@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 {% endblock %}
+{% block menu %}
+    {% include "website/_layouts/menu.html" %}
+{% endblock %}
 {% block conteudo %}
     <div class="container">
         <br/>
@@ -15,28 +18,28 @@
         <hr/>
         <div class="row text-center div-home-gifs">
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/foguete.gif' %}" alt="Otimização">
+                <img class="rounded-circle gifs-home" src="{% static 'website/img/foguete.gif' %}" alt="Otimização">
                 <h2 class="h2-home">Otimize</h2>
                 <p class="text-justify">
                     Otimize seus resultados com a ajuda da tecnologia, tornando a rotina do seu negócio mais eficaz, eficiente e gerenciavel, gerando mais resultado com menos recursos.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/robo.gif' %}" alt="Automatização" height="150">
+                <img class="rounded-circle gifs-home" src="{% static 'website/img/robo.gif' %}" alt="Automatização" height="150">
                 <h2 class="h2-home">Automatize</h2>
                 <p class="text-justify">
                     Automatize total ou parcialmente seus processos e tarefas, tornando tudo mais rápido, eficiente, sistemico e centralizado.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/personalize.gif' %}" alt="Personalização">
+                <img class="rounded-circle gifs-home" src="{% static 'website/img/personalize.gif' %}" alt="Personalização">
                 <h2 class="h2-home">Personalize</h2>
                 <p class="text-justify">
                     Sites e sistemas sob medida de acordo com a sua necessidade. Integração entre sistemas, gerenciamento, intranet, e tudo o que precisar.
                 </p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-                <img class="rounded-circle" src="{% static 'website/img/integracao.gif' %}" alt="Integração">
+                <img class="rounded-circle gifs-home" src="{% static 'website/img/integracao.gif' %}" alt="Integração">
                 <h2 class="h2-home">Integre</h2>
                 <p class="text-justify">
                     Centralize sua informações integrando os diversos sistemas usados diariamente, explorando ao máximo os recursos oferecidos, sem redundância e com funcionalidades personalizadas.

@@ -28,3 +28,6 @@ def enviar_contato(request):
             return render(request, 'website/home.html', data)
         data['erro'] = 'Erro! Preencha todos os campos corretamente e tente novamente.'
         return render(request, 'website/home.html', data)
+
+def ferramentas(request):
+    return render(request, 'website/tools.html')
